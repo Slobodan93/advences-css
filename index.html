@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1680px;
+            width: 90%;
+            margin: 0 auto;
+            font-family: sans-serif;
+        }
+
+        #contener {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 50px;
+            min-height: 400px;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .column {
+            height: 144px;
+            box-sizing: border-box;
+            margin: 20px 0;
+        }
+
+        .box {
+            height: 144px;
+            background-color: rgb(89, 165, 228);
+            border-radius: 5%;
+        }
+
+        .div1 {
+            height: 82%;
+            display: flex;
+        }
+
+        .div2 {
+            height: 18%;
+        }
+
+        div>p {
+            margin: 5px auto;
+            text-align: center;
+            background-color: rgb(239, 244, 249);
+            padding-top: 5px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .paragraph {
+            margin: 20px 0;
+            align-content: flex-start;
+        }
+
+        img {
+            width: 100%;
+            align-self: center;
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            #contener {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            #contener {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            h1 {
+                font-size: 33px;
+            }
+        }
+
+
+
+        @media screen and (max-width: 414px) {
+            #contener {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="contener">
+        <div class="column">
+            <div class="box">
+                <div class="div1"><img src="placeholder-image.png" alt="placeholder-image"> </div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <div class="div1"> <img src="placeholder-image.png" alt="placeholder-image"></div>
+                <div class="div2">
+                    <p>Image Title</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus ante massa, non
+        tristique felis tristique et. Nam gravida leo ac urna tincidunt euismod. Nullam a sem sit amet quam ultricies
+        pretium non in lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Pellentesque ornare mauris sed ornare tincidunt. Aliquam vitae elit pellentesque, viverra augue a,
+        iaculis magna. Sed et imperdiet metus. Integer justo odio, posuere eu leo eget, pharetra fringilla tortor.
+        Praesent vulputate purus non dolor dictum, nec ultrices est vulputate. Interdum et malesuada fames ac ante ipsum
+        primis in faucibus. Phasellus efficitur ex eget urna vehicula tempor. Nam non nunc laoreet, condimentum massa
+        at, sodales elit. Vivamus finibus ante leo, dictum tincidunt eros hendrerit ut.</p>
+</body>
+
+</html>
